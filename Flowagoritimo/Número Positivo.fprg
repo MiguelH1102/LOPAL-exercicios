@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="N&#250;mero Positivo"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 10:02:18 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM4OzIwMjUtMDQtMDg7IjAxOjA0OjU0ICI7MjYyNA=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM4OzIwMjUtMDQtMTU7IjEwOjAyOjE4ICI7MjsyNzI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeroPositivo" type="Integer" array="False" size=""/>
+            <comment text="A variavel n&#250;mero positivo armazenara um n&#250;mero maior que zero"/>
+            <output expression="&quot;Escreva um n&#250;mero&quot;" newline="True"/>
+            <input variable="numeroPositivo"/>
+            <if expression="numeroPositivo &gt; 0">
+                <then>
+                    <comment text="O comando numeroPositivo &gt; 0, ele vai mostrar se um n&#250;mero &#233; maior ou nenor que zero, onde se for maior ele escrevera &quot;O n&#250;mero &#233; positivo&quot;"/>
+                    <output expression="&quot;O n&#250;mero &#233; positivo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <comment text="O comando numeroPositivo &gt; 0, ele vai mostrar se um n&#250;mero &#233; maior ou nenor que zero, onde se o n&#250;mero for menor ele vai escrever &quot;O n&#250;mero &#233; negativo&quot; "/>
+                    <output expression="&quot;O n&#250;mero &#233; negativo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

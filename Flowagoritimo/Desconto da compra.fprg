@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Desconto da compra"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 10:21:42 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM4OzIwMjUtMDQtMDg7IjAxOjI3OjMxICI7MjYyNA=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM4OzIwMjUtMDQtMTU7IjEwOjIxOjQyICI7MjsyNzI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numValor, numDes" type="Real" array="False" size=""/>
+            <comment text="As variavel numValor, armazenara um n&#250;mero real aleatorio e a variavel numDes armazenara o n&#250;mero do numValor com o desconto"/>
+            <output expression="&quot;Qual foi o valor da compra&quot;" newline="True"/>
+            <input variable="numValor"/>
+            <comment text="O comando vai ler o numValor "/>
+            <if expression="numValor &gt;= 100">
+                <then>
+                    <comment text="O comando numValor &gt;= 100  vai dixer se a compra vai dar maior ou menor que 100 onde se for maior sera escrito &quot;O valor sem desconto &#233; de&quot;  &amp; numValor"/>
+                    <output expression="&quot;O valor sem desconto &#233; de&quot;  &amp; numValor" newline="True"/>
+                    <assign variable="numDes" expression="numValor * 0.9"/>
+                    <comment text="O comando numDes = numValor * 0.9 vai calcular o valor da compra com o desconde de 10% onde ele vai escrever &quot;Esse &#233; o valor da compra com um desconto de 10%&quot;  &amp;  numDes"/>
+                    <output expression="&quot;Esse &#233; o valor da compra com um desconto de 10%&quot;  &amp;  numDes" newline="True"/>
+                </then>
+                <else>
+                    <comment text="O comando numValor &gt;= 100  vai dixer se a compra vai dar maior ou menor que 100 onde se for menor ele vai escrever &quot;N&#227;o comprou nada ainda!&quot;"/>
+                    <output expression="&quot;N&#227;o comprou nada ainda!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

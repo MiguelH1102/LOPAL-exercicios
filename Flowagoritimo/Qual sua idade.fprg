@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Qual sua idade"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 10:07:45 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM4OzIwMjUtMDQtMDg7IjAxOjEzOjQ0ICI7MjYyMw=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM4OzIwMjUtMDQtMTU7IjEwOjA3OjQ1ICI7MzsyNzM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idadeAnos" type="Integer" array="False" size=""/>
+            <comment text="A variavel idadeAnos, vai amarzenar a idade de uma pessoa"/>
+            <output expression="&quot;Escreva sua idade&quot;" newline="True"/>
+            <input variable="idadeAnos"/>
+            <comment text="Esse comando ele vai ler a idade que voc&#234; tem"/>
+            <if expression="idadeAnos &gt; 18">
+                <then>
+                    <comment text="O comando idadeAnos &gt; 18 vai escrever se ele &#233; maior ou menor de idade, onde se for maior ele vai escrever &quot;Voc&#234; &#233; maior de idade&quot;"/>
+                    <output expression="&quot;Voc&#234; &#233; maior de idade&quot;" newline="True"/>
+                </then>
+                <else>
+                    <comment text="O comando idadeAnos &gt; 18 vai escrever se ele &#233; maior ou menor de idade, onde se for menor ele vai escrever &quot;Voc&#234; &#233; menor de idade &#55357;&#56606;&quot;"/>
+                    <output expression="&quot;Voc&#234; &#233; menor de idade &#55357;&#56606;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

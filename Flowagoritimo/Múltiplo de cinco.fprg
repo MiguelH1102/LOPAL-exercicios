@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="M&#250;ltiplo de cinco"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 10:26:10 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM4OzIwMjUtMDQtMDg7IjAxOjQ2OjM4ICI7MjYzMg=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODM4OzIwMjUtMDQtMTU7IjEwOjI2OjEwICI7MjsyNzI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numInt" type="Integer" array="False" size=""/>
+            <comment text="A variavel numInt armazenara um n&#250;mero inteiro aleatorio "/>
+            <output expression="&quot;Escreva um n&#250;mero qualquer&quot;" newline="True"/>
+            <input variable="numInt"/>
+            <comment text="Esse comando vai ler o  n&#250;mero aleat&#243;rio"/>
+            <if expression="numInt % 5 == 0">
+                <then>
+                    <comment text="O comando numInt % 5 == 0 vai mostrar se o n&#250;mero &#233; ou n&#227;o mutiplo de cinco onde se for multiplo ele vai escrever &quot;O n&#250;mero &#233; m&#250;tiplo de 5&quot;"/>
+                    <output expression="&quot;O n&#250;mero &#233; m&#250;tiplo de 5&quot;" newline="True"/>
+                </then>
+                <else>
+                    <comment text="O comando numInt % 5 == 0 vai mostrar se o n&#250;mero &#233; ou n&#227;o mutiplo de cinco onde se n&#227;o for multiplo de cinco ele vai escrever &quot;O n&#250;mero n&#227;o &#233; mutiplo de 5&quot;"/>
+                    <output expression="&quot;O n&#250;mero n&#227;o &#233; mutiplo de 5&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
